@@ -288,10 +288,8 @@ a.nav-item.nav-link:hover {
 
 #clicker2 {
   background: #7ebc59;
-  width: 6rem;
   display: inline;
   padding: 10px 8px;
-  height: 2.5rem;
   border-radius: 4px; }
 
 .growMe {

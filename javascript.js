@@ -91,7 +91,8 @@ function bingoCall1() {
   clicker2.innerHTML = oldArray.length > 0 ? `${oldArray.length} to go` : `END`;
   newArray.push(blue);
   fillHTML1();
-}
+  }
+
 
 function bingoCall2() {
   button1.style.display = "none";
@@ -121,10 +122,8 @@ function fillHTML() {
 }
 
 function fillHTML1() {
-  // for (var i=0; i<newArray.length;i++){
-  //   wrapper.innerHTML =
   newArray.forEach(function (item) {
-    var div = document.createElement("div");
+    let div = document.createElement("div");
     div.innerHTML = `
   <div class="minicard text-center d-flex justify-content-center">
   <img src="/img/${item}">
