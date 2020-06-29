@@ -1,0 +1,58 @@
+.navbar {
+    opacity: 1;
+    background: $color-blue;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Monserrat", sans-serif;
+    position: sticky;
+    width: 100%;
+  }
+  
+  .nav-link,
+  .navbar-brand {
+    color: $color-light-grey;
+  }
+  
+  .navbar-brand:hover {
+    transform: scale(1.1);
+  }
+  
+  #getInTouch {
+    color: $color-light-grey;
+    text-decoration: underline;
+  }
+  
+
+
+  // a,
+  // a:visited,
+  // a:active {
+  //   color: $color-light-grey;
+  // }
+  
+  a.nav-item.nav-link,
+  a.nav-item.nav-link:visited,
+  a.nav-item.nav-link:focus,
+  a.nav-item.nav-link:hover {
+    color: $color-light-grey;
+  }
+  
+  .nav-link {
+    margin-right: 1rem !important;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a.nav-item.nav-link:hover {
+    color: $color-yellow;
+  }
+  
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+  
+  #page__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

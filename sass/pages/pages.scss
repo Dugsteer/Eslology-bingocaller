@@ -1,0 +1,49 @@
+.leaderAd {
+    width: 85%;
+    height: 6rem;
+    margin: auto;
+    background: green;
+    color: green;
+  }
+
+.clicker {
+  background: $color-blue;
+  color: $color-light-grey;
+  cursor: pointer;
+  transition: all .2s ease-in;
+  text-transform: uppercase;
+}
+
+.clicker:hover {
+  transform: scale(1.2);
+}
+
+#clicker2 {
+  background: $color-green;
+  width: 6rem;
+  display:inline;
+  padding: 10px 8px;
+  height: 2.5rem;
+  border-radius: 4px;
+}
+
+.growMe{
+  animation: anim .5s infinite;
+  animation-iteration-count: 3;
+}
+
+@keyframes anim {
+  from {
+    transform: scale(.98);
+  }
+to {
+    transform: scale(1.1);
+  }
+}
+
+
+
+  @media print{
+    @page :navbar {display: none }
+    @page :footer {display: none}
+}

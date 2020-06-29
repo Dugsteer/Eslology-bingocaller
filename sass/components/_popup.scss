@@ -1,0 +1,155 @@
+.instructions {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: scroll;
+    align-items: center;
+    text-align: center;
+    height: 300vh;
+    min-height: 300rem;
+    width: 105%;
+    margin: 3rem 0;
+    padding-top: 3rem;
+    top: 0;
+    left: 0;
+    background-color: $color-blue;
+    line-height: 3rem;
+    color: $color-light-grey;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .instructions .wrapper {
+    max-width: 548px;
+    min-width: 548px;
+  }
+  
+
+  .instructions-vanish {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
+  
+  .instructions ul {
+    list-style-type: none;
+  }
+  
+  .group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .top-group {
+    width: 50%;
+  }
+  
+  
+  ul.playlist {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  
+  }
+  
+  .bottom-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    margin-top: 3rem;
+    color: $color-slate;
+  }
+  
+  .set {
+    display: block;
+    padding: .5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    height: auto;
+    transform: translateY(-0.5rem);
+    text-transform: uppercase;
+    background-color: $color-green;
+    color: $color-white;
+  }
+  
+  .close {
+    font-size: 4rem;
+    font-weight: 100;
+    position: absolute;
+    right: 12vw;
+    top: 5vh;
+    color: $color-yellow;
+  }
+
+  .close::before {
+    color: $color-yellow;
+  }
+
+  .print-wrapper {
+      display: flex;
+      flex-wrap:wrap;
+      overflow: none;
+      width: 550px;
+      height: auto;
+      min-height: 40rem;
+      align-items: center;
+      justify-content: center;
+      background-color: $color-yellow;
+      margin: auto;
+      padding: 1rem;
+   
+    }
+
+@media print {
+  .print-wrapper{
+    display: flex;
+    flex-wrap:wrap;
+    overflow: none;
+    height: auto;
+    min-height: 40rem;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-yellow;
+    margin: auto;
+    padding: 1rem;
+    width: 120cm;
+    height: 200cm;
+    transform: scale(1.5);
+  }
+}
+
+    
+
+  @media only screen and (max-width: 800px) {
+  .memory-card:active {
+    transition: transform 0s;
+  }
+
+  .memory-card {
+    transition: transform 0s;
+  }
+
+  .front-face {
+    font-size: 1rem;
+  }
+
+    .instructions {
+      position:absolute;
+      padding: 8rem 0;
+
+    }
+    .close {
+      top: 5rem;
+    }
+  }
+  
+  

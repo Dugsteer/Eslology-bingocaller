@@ -1,0 +1,14 @@
+.minicard {
+    display: flex;
+    flex-direction: column;
+    border: 1ps solid black;
+    border-radius: 8px;
+    height: 8rem;
+    width: 9rem;
+    margin: 2px 2px;
+    background-color: $color-green;
+}
+
+.minicard img {
+    height: 6rem;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BINGO CALLER</title>
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- FontAWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+  <!-- MY STYLESHEET -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- Navbar at the top of the page -->
+  <nav class="navbar sticky-top navbar-expand-md navbar-dark">
+    <a class="navbar-logo" href="#"><img class="mr-3 ml-4"  src="img/Buho.PNG" height="32" width="22"></a>
+    <span class="navbar-brand h1 mt-2 mr-4 d-none d-lg-inline-block">Esl-Ology.com</span>
+        <span
+      class="ml-3 sm-ml-5 lg-ml-0 ml-sm-4 navbar-brand" id="page__title"> BINGO CALLER</span>
+
+    <button class="navbar-toggler ml-auto mr-3" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <a class="nav-item nav-link" id="howToPlay" href="#">How to Play</a>
+      <a class="nav-item nav-link" href="#aboutMe">Home</a>
+    </div>
+  </nav>
+
+  <div class="container">
+  <div class="container mt-4">
+  <div class="row mb-4">
+    <div class="col-12">
+      <div class="leaderAd"></div>
+    </div>
+  </div>
+</div>
+
+<div class=" text-center">
+<button type="button" class="btn clicker mr-4" onclick ="bingoCall()" id="button0">images & words</button>
+<button type="button" class="btn clicker mr-4" onclick ="bingoCall1()"id="button1">images</button>
+<button type="button" class="btn clicker mr-4" onclick ="bingoCall2()"id="button2">words</button>
+</div>
+<div class="text-center mt-3">
+<button type="button" class="btn clicker mr-4" id="clicker2">21 to go</button>
+</div>
+
+    <div class="wrapper mt-4 text-center" id="wrapper">
+      <div class="centralizer">
+        <img src="img/bingoCARD.jpg" class="mb-4" alt="">
+  <h1>Click a button to start</h1>
+  <p class="large">Choose from images, <br>images with words, <br>or just words</p>
+    </div>
+  </div>
+
+
+    <div class="container mt-4 mb-4">
+      <div class="row mb-2">
+        <div class="col-12">
+          <div class="leaderAd"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+</div>
+<!-- 
+  Footer Material -->
+ <footer class="page-footer">
+    <div class="footer-copyright text-center">© 2020 Copyright Esl-ology.com & copyright owners.<br>Vectors & images
+      by <a href="https://www.vecteezy.com">Vecteezy</a>&nbsp&nbsp<a href="https://pixabay.com">Pixabay</a>&nbsp&nbsp<a
+        href="https://unsplash.com">Unsplash </a>etc.
+      Thanks,guys!
+    </div>
+  </footer>
+
+  <div class="instructions instructions-vanish" id="instructions">
+    <div class="top-group mt-5">
+      <h1>TRANSPORT</h1>
+      <i class="fa fa-times close" id="close"></i>
+      <button class="btn btn-large btn-primary"onclick="printdiv();">PRINT</button>
+      <div id="print-wrapper">
+      <div class="wrapper mt-4 text-center"><div>
+        <div class="minicard text-center">
+        <img src="/img/motorbike.png">
+        <h3 class="minicard__h3">motorbike</h3>
+      </div>
+      </div><div>
+        <div class="minicard text-center">
+        <img src="/img/bike.png">
+        <h3 class="minicard__h3">bike</h3>
+      </div>
+      </div><div>
+        <div class="minicard text-center">
+        <img src="/img/speedboat.png">
+        <h3 class="minicard__h3">speedboat</h3>
+      </div>
+      </div><div>
+        <div class="minicard text-center">
+        <img src="/img/sailingboat.png">
+        <h3 class="minicard__h3">sailingboat</h3>
+      </div>
+      </div><div>
+        <div class="minicard text-center">
+        <img src="/img/helicopter.png">
+        <h3 class="minicard__h3">helicopter</h3>
+      </div>
+      </div><div>
+        <div class="minicard text-center">
+        <img src="/img/van.png">
+        <h3 class="minicard__h3">van</h3>
+      </div>
+      </div><div>
+        <div class="minicard text-center">
+        <img src="/img/ambulance.png">
+        <h3 class="minicard__h3">ambulance</h3>
+      </div>
+      </div><div>
+        <div class="minicard text-center">
+        <img src="/img/lorry.png">
+        <h3 class="minicard__h3">lorry</h3>
+      </div>
+      </div><div>
+        <div class="minicard text-center">
+        <img src="/img/train.png">
+        <h3 class="minicard__h3">train</h3>
+      </div>
+      </div><div>
+        <div class="minicard text-center">
+        <img src="/img/limousine.png">
+        <h3 class="minicard__h3">limousine</h3>
+      </div>
+      </div><div>
+        <div class="minicard text-center">
+        <img src="/img/plane.png">
+        <h3 class="minicard__h3">plane</h3>
+      </div>
+      </div><div>
+        <div class="minicard text-center">
+        <img src="/img/firetruck.png">
+        <h3 class="minicard__h3">firetruck</h3>
+      </div>
+      </div><div>
+        <div class="minicard text-center">
+        <img src="/img/ecar.png">
+        <h3 class="minicard__h3">ecar</h3>
+      </div>
+      </div><div>
+        <div class="minicard text-center">
+        <img src="/img/submarine.png">
+        <h3 class="minicard__h3">submarine</h3>
+      </div>
+      </div><div>
+        <div class="minicard text-center">
+        <img src="/img/taxi.png">
+        <h3 class="minicard__h3">taxi</h3>
+      </div>
+      </div><div>
+        <div class="minicard text-center">
+        <img src="/img/bus.png">
+        <h3 class="minicard__h3">bus</h3>
+      </div>
+      </div><div>
+        <div class="minicard text-center">
+        <img src="/img/schoolbus.png">
+        <h3 class="minicard__h3">schoolbus</h3>
+      </div>
+      </div><div>
+        <div class="minicard text-center">
+        <img src="/img/car.png">
+        <h3 class="minicard__h3">car</h3>
+      </div>
+      </div><div>
+        <div class="minicard text-center">
+        <img src="/img/digger.png">
+        <h3 class="minicard__h3">digger</h3>
+      </div>
+      </div><div>
+        <div class="minicard text-center">
+        <img src="/img/policecar.png">
+        <h3 class="minicard__h3">policecar</h3>
+      </div>
+      </div><div>
+        <div class="minicard text-center">
+        <img src="/img/balloon.png">
+        <h3 class="minicard__h3">balloon</h3>
+      </div>
+      </div></div>
+    </div>
+    </div>
+
+
+
+    <script src="javascript.js"></script>
+    <!-- Script to toggle the Vertical Navbar -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>

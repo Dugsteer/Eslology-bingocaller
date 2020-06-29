@@ -1,0 +1,27 @@
+.page-footer {
+  width: 100%;
+    background: $color-blue;
+    color: $color-light-grey;
+    padding: 1rem;;
+  }
+  
+  .footer-copyright {
+    color: $color-light-grey;
+    padding-top: 2rem 0;
+    height: 4rem;
+    background: $color-blue;
+  }
+  
+  .footer-copyright a {
+    color: $color-yellow;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .footer-copyright p{
+      font-size: .8rem;
+    }
+
+    .footer-copyright h1{
+      font-size: 1rem;
+    }
+  }

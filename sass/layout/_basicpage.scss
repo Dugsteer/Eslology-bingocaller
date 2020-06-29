@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  flex-wrap:wrap;
+  overflow: none;
+  max-width: 90%;
+  height: auto;
+  min-height: 40rem;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-yellow;
+  margin: auto;
+  padding: 1rem;
+  padding-left: 3rem;
+  color: $color-slate;
+}
+
+.unCenter {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
