@@ -124,6 +124,7 @@ function fillHTML() {
 function fillHTML1() {
   newArray.forEach(function (item) {
     let div = document.createElement("div");
+    (item.length < 2) ? console.log('no') : 
     div.innerHTML = `
   <div class="minicard text-center d-flex justify-content-center">
   <img src="/img/${item}">
@@ -132,6 +133,8 @@ function fillHTML1() {
     wrapper.appendChild(div);
   });
 }
+
+
 function fillHTML2() {
   // for (var i=0; i<newArray.length;i++){
   //   wrapper.innerHTML =

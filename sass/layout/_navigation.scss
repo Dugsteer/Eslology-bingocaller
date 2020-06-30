@@ -55,4 +55,17 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    width: 20rem;
+    justify-content: space-evenly;
+
+  }
+
+  #page__title .navbar-brand {
+    font-size: 2rem;
+  }
+
+  .title-decoration {
+    width: 2.5rem;
+    height: 2.5rem;
   }
